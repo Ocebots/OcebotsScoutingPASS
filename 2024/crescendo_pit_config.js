@@ -23,13 +23,14 @@ var config_data = `
       "code": "drv",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
+        "mk4": "Swerve - SDS<br>",
+        "rev": "Swerve - REV<br>",
         "w": "West Coast/Tank<br>",
         "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "s"
+      "defaultValue": "mk4"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -45,6 +46,9 @@ var config_data = `
         "2": "L2 (6.75:1)<br>",
         "3": "L3 (6.12:1)<br>",
         "4": "L4 (5.14:1)<br>",
+        "5": "REV - 12T (5.50:1)<br>",
+        "6": "REV - 13T (5.08:1)<br>",
+        "7": "REV - 14T (4.71:1)<br>",
         "o": "Other ratio (put in comments)<br>",
         "x": "Not Swerve"
       },
@@ -57,6 +61,7 @@ var config_data = `
         "n": "Neo<br>",
         "nv": "Neo Vortex<br>",
         "f": "Falcon<br>",
+        "k": "Kraken<br>",
         "c": "CIM<br>",
         "x": "Other<br>"
       },
@@ -74,12 +79,6 @@ var config_data = `
     },
     { "name": "Autos",
       "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
       "type": "text",
       "size": 20,
       "maxSize": 250
