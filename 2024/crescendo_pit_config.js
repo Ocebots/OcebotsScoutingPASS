@@ -68,9 +68,9 @@ var config_data = `
       "choices": {
         "f": "Floor<br>",
         "s": "Source<br>",
-        "b": "Both<br>",
+        "bo": "Both<br>",
       },
-      "defaultValue":"b"
+      "defaultValue":"bo"
     },
     { "name": "Where can they score?",
     "code": "ws",
