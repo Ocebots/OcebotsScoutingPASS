@@ -55,15 +55,22 @@ var config_data = `
       "type": "radio",
       "choices": {
         "n": "Neo<br>",
+        "nv": "Neo Vortex<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    { "name": "Where can they score",
+      "code": "wcs",
+      "type": "radio",
+      "choices": {
+        "sp": "Speaker",
+        "amp": "Amp<br>",
+        "x": "Both<br>"
+      },
+      "defaultValue":"x"
     },
     { "name": "Floor pickup Notes",
       "code": "fpu",
