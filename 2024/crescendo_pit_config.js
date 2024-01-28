@@ -62,16 +62,7 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Where can they intake?",
-      "code": "it",
-      "type": "radio",
-      "choices": {
-        "f": "Floor<br>",
-        "s": "Source<br>",
-        "bo": "Both<br>",
-      },
-      "defaultValue":"bo"
-    },
+
     { "name": "Where can they score?",
     "code": "ws",
     "type": "radio"
