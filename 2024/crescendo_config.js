@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -100,7 +100,7 @@ var config_data = `
         "b": "Both<br>",
         "x": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "b"
     }
   ],
   "endgame": [
@@ -136,7 +136,7 @@ var config_data = `
         "v": "Very Effective<br>",
         "x": "Not Observed"
       },
-      "defaultValue": "x"
+      "defaultValue": "a"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -148,7 +148,7 @@ var config_data = `
         "e": "Excellent<br>",
         "x": "Did not play defense"
       },
-      "defaultValue": "x"
+      "defaultValue": "a"
     },
     { "name": "Speed Rating",
       "code": "sr",
