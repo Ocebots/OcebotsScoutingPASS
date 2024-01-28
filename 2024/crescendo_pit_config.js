@@ -25,11 +25,10 @@ var config_data = `
       "choices": {
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "s"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -55,28 +54,36 @@ var config_data = `
       "type": "radio",
       "choices": {
         "n": "Neo<br>",
+        "nv": "Neo Vortex<br>",
+        "k": "Kraken X60<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    { "name": "Where can they intake?",
+      "code": "it",
+      "type": "radio",
+      "choices": {
+        "f": "Floor<br>",
+        "s": "Source<br>",
+        "b": "Both<br>",
+      },
+      "defaultValue":"b"
     },
-    { "name": "Floor pickup Notes",
-      "code": "fpu",
-      "type": "bool"
+    { "name": "Where can they score?",
+    "code": "ws",
+    "type": "radio"
+    "choices": {
+      "a": "Amp<br>",
+      "sp": "Speaker<br>,"
+      "bt": "Both<br>,"
+      },
+      "defaulltValue:"bt"
     },
     { "name": "Autos",
       "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
       "type": "text",
       "size": 20,
       "maxSize": 250
