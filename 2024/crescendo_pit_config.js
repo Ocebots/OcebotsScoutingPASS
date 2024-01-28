@@ -29,7 +29,7 @@ var config_data = `
         "m": "Mechanum<br>",
         "o": "Other"
       },
-      "defaultValue": "o"
+      "defaultValue": "s"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -71,10 +71,6 @@ var config_data = `
         "x": "Both<br>"
       },
       "defaultValue":"x"
-    },
-    { "name": "Floor pickup Notes",
-      "code": "fpu",
-      "type": "bool"
     },
     { "name": "Autos",
       "code": "aut",
