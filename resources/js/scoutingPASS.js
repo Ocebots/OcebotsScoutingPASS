@@ -776,7 +776,8 @@ for ( rb of document.getElementsByName('r')) { rb.checked = false };
 }
 
 
-
+function getLevel(){
+}
 
 
 function validateData() {
@@ -1202,7 +1203,7 @@ function getCurrentTeamNumberFromRobot() {
 }
 
 function getCurrentMatchKey() {
-  return document.getElementById("input_e").value + "_" + document.getElementById("input_m").value;
+  return document.getElementById("input_e").value + "_" + getLevel() + document.getElementById("input_m").value;
 }
 
 function getCurrentMatch() {
