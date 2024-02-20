@@ -22,12 +22,11 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match Level",
-      "gsCol": "MatchLevel",
       "code": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
-        "po": "Playoffs<br>",
+        "sf": "Semifinals<br>",
         "f": "Finals"
       },
       "defaultValue": "qm",
