@@ -777,6 +777,7 @@ for ( rb of document.getElementsByName('r')) { rb.checked = false };
 
 
 function getLevel(){
+return document.forms.scoutingForm.l.value
 }
 
 
