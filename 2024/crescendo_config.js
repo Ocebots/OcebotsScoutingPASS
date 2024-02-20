@@ -1,10 +1,10 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "enable_google_sheets": "true",
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
+  "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter",
       "gsCol": "Scouter",
@@ -22,7 +22,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match Level",
-      "gsCol": "Match Level",
+      "gsCol": "MatchLevel",
       "code": "l",
       "type": "level",
       "choices": {
@@ -34,7 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-      "gsCol": "Match #",
+      "gsCol": "Match#",
       "code": "m",
       "type": "match",
       "min": 1,
@@ -56,14 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-      "gsCol": "Team Number",
+      "gsCol": "TeamNumber",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-      "gsCol": "Auto Start Pos",
+      "gsCol": "AutoStartPos",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -74,39 +74,39 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-      "gsCol": "A: Leave Starting Zone",
+      "gsCol": "A: LeaveStartingZone",
       "code": "al",
       "type": "bool"
     },
     { "name": "Amp Scores",
-      "gsCol": "A: Amp Scores",
+      "gsCol": "A:AmpScores",
       "code": "aas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "A: Speaker Scores",
+      "gsCol": "A: SpeakerScores",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
     { "name": "Amp Scores",
-      "gsCol": "T: Amp Scores",
+      "gsCol": "T:AmpScores",
       "code": "tas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
-      "gsCol": "T: Speaker Scores",
+      "gsCol": "T:SpeakerScores",
       "code": "tss",
       "type": "counter"
     },
     { "name": "Times Amplified",
-      "gsCol": "Times Amplified",
+      "gsCol": "TimesAmplified",
       "code": "tta",
       "type": "counter"
     },
     { "name": "Pickup From",
-      "gsCol": "Pickup from",
+      "gsCol": "Pickupfrom",
       "code": "tpu",
       "type": "radio",
       "choices": {
@@ -120,12 +120,12 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Stage Timer",
-      "gsCol": "Stage Timer",
+      "gsCol": "StageTimer",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-      "gsCol": "Final Status",
+      "gsCol": "FinalStatus",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -139,14 +139,14 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Note in Trap",
-      "gsCol": "Note in trap"
+      "gsCol": "Noteintrap"
       "code": "nit",
       "type": "bool"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
-      "gsCol": "Driver Skill",
+      "gsCol": "DriverSkill",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -158,7 +158,7 @@ var config_data = `
       "defaultValue": "a"
     },
     { "name": "Defense Rating",
-      "gsCol": "Defense Rating",
+      "gsCol": "DefenseRating",
       "code": "dr",
       "type": "radio",
       "choices": {
@@ -171,7 +171,7 @@ var config_data = `
       "defaultValue": "a"
     },
     { "name": "Speed Rating",
-      "gsCol": "Speed Rating",
+      "gsCol": "SpeedRating",
       "code": "sr",
       "type": "radio",
       "choices": {
@@ -199,7 +199,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
-      "gsCol": "Good Partner?",
+      "gsCol": "GoodPartner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
