@@ -139,7 +139,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Note in Trap",
-      "gsCol": "Noteintrap"
+      "gsCol": "Noteintrap",
       "code": "nit",
       "type": "bool"
     }
