@@ -1,10 +1,10 @@
 var config_data = `
 {
   "dataFormat": "tsv",
+  "enable_google_sheets": "true",
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
-  "enable_google_sheets": "true",
   "prematch": [
     { "name": "Scouter",
       "gsCol": "Scouter",
