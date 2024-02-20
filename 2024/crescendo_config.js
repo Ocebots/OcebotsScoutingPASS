@@ -1,11 +1,13 @@
 var config_data = `
 {
   "dataFormat": "tsv",
+  "enable_google_sheets": "true",
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter",
+      "gsCol": "Scouter",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -13,23 +15,26 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
+      "gsCol": "Event",
       "code": "e",
       "type": "event",
       "defaultValue": "2023vabla",
       "required": "true"
     },
     { "name": "Match Level",
+      "gsCol": "Match Level",
       "code": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
+        "po": "Playoffs<br>",
         "f": "Finals"
       },
       "defaultValue": "qm",
       "required": "true"
     },
     { "name": "Match #",
+      "gsCol": "Match #",
       "code": "m",
       "type": "match",
       "min": 1,
@@ -37,6 +42,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Robot",
+      "gsCol": "Robot",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -50,12 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
+      "gsCol": "Team Number",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
+      "gsCol": "Auto Start Pos",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -66,32 +74,39 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
+      "gsCol": "A: Leave Starting Zone",
       "code": "al",
       "type": "bool"
     },
     { "name": "Amp Scores",
+      "gsCol": "A: Amp Scores",
       "code": "aas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
+      "gsCol": "A: Speaker Scores",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
     { "name": "Amp Scores",
+      "gsCol": "T: Amp Scores",
       "code": "tas",
       "type": "counter"
     },
     { "name": "Speaker Scores",
+      "gsCol": "T: Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
     { "name": "Times Amplified",
+      "gsCol": "Times Amplified",
       "code": "tta",
       "type": "counter"
     },
     { "name": "Pickup From",
+      "gsCol": "Pickup from",
       "code": "tpu",
       "type": "radio",
       "choices": {
@@ -105,10 +120,12 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Stage Timer",
+      "gsCol": "Stage Timer",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
+      "gsCol": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -122,12 +139,14 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Note in Trap",
+      "gsCol": "Note in trap"
       "code": "nit",
       "type": "bool"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
+      "gsCol": "Driver Skill",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -139,6 +158,7 @@ var config_data = `
       "defaultValue": "a"
     },
     { "name": "Defense Rating",
+      "gsCol": "Defense Rating",
       "code": "dr",
       "type": "radio",
       "choices": {
@@ -151,6 +171,7 @@ var config_data = `
       "defaultValue": "a"
     },
     { "name": "Speed Rating",
+      "gsCol": "Speed Rating",
       "code": "sr",
       "type": "radio",
       "choices": {
@@ -163,23 +184,28 @@ var config_data = `
       "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
+      "gsCol": "Died?",
       "code": "die",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
+      "gsCol": "Tippy?",
       "code": "tip",
       "type": "bool"
     },
     { "name": "Dropped Notes (>2)",
+      "gsCol": "Dropped?",
       "code": "dn",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
+      "gsCol": "Good Partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
+      "gsCol": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
