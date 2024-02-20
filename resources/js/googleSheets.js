@@ -1,26 +1,26 @@
 function setUpGoogleSheets() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbySP5_FBTTnLd3w6bwEhQPzOST40dGF9zsfRnqvZ1I7dM4zsfMldc9Bl_aLb_dGPKxqrw/exec'
-    const form = document.querySelector('#scoutingForm')
-    const btn = document.querySelector('#submit')
- 
-    
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      btn.disabled = true
-      btn.innerHTML = "Sending..."
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbySP5_FBTTnLd3w6bwEhQPzOST40dGF9zsfRnqvZ1I7dM4zsfMldc9Bl_aLb_dGPKxqrw/exec'
+  const form = document.querySelector('#scoutingForm')
+  const btn = document.querySelector('#submit')
 
-      let fd = getData(false)
-      for (const [key, value] of fd) {
-        console.log(`${key}: ${value}\n`);
-      }
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btn.disabled = true
+    btn.innerHTML = "Sending..."
 
-      fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: fd })
-        .then(response => { 
-              alert('Success!', response) })
-        .catch(error => {
-              alert('Error!', error.message)})
+    let fd = getData(false)
+    for (const [key, value] of fd) {
+      console.log(`${key}: ${value}\n`);
+    }
 
-      btn.disabled = false
-      btn.innerHTML = "Send to Google Sheets"
-    })
+    fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: fd })
+      .then(response => { 
+            alert('Success!', response) })
+      .catch(error => {
+            alert('Error!', error.message)})
+
+    btn.disabled = false
+    btn.innerHTML = "Send to Google Sheets"
+  })
 }
