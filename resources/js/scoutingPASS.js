@@ -1200,13 +1200,7 @@ function getCurrentTeamNumberFromRobot() {
   }
 }
 
-function getCurrentMatchKey() {
-  return document.getElementById("input_e").value + "_" + getLevel() + document.getElementById("input_m").value;
-}
 
-function getCurrentMatch() {
-  return getMatch(getCurrentMatchKey());
-}
 
 function updateMatchStart(event) {
   if ((getCurrentMatch() == "") ||
