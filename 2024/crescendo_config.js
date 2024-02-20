@@ -212,6 +212,6 @@ var config_data = `
       "maxSize": 55
     }
   ]
-}`
+}`;
 
 
