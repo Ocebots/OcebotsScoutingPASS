@@ -767,7 +767,7 @@ function configure() {
 }
 
 function getRobot(){
-  return document.forms.scoutingForm.r.value;
+  return document.forms.scoutingForm.r;
 }
 
 
