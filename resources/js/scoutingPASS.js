@@ -1223,7 +1223,7 @@ function updateMatchStart(event) {
   }
   if (event.target.id == "input_m") {
     if (getRobot() != "" && typeof getRobot()) {
-      document.getElementById("input_t").value = getCurrentTeamNumberFromRobot()
+      document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
       onTeamnameChange();
     }
   }
